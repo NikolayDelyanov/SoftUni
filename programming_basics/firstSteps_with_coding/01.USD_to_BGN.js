@@ -1,5 +1,5 @@
 function solve(input){
 
- console.log("");
+ console.log("Veni i love you so much");
 }
-solve
+solve()
