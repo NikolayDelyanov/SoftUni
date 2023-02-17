@@ -14,8 +14,10 @@ let bagPrice = 0.40;
 let materialsFinalSum = nylonFinalSum + paintFinalSum + thinnerFinalSum + bagPrice;
 
 let finalSum = (materialsFinalSum * 0.30) * hours;
+let finalSumWithMaterials = finalSum + materialsFinalSum;
 
-console.log(finalSum);
+
+console.log(finalSum + materialsFinalSum);
 
 }
 Repainting(["10 ","11 ","4 ","8 "]);
