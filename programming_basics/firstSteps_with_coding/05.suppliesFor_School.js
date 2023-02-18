@@ -16,4 +16,4 @@ console.log(discountedPrice);
 
 
 }
-suppliesForSchool()["2 ","3 ","4 ","25 "];
+suppliesForSchool(["2 ","3 ","4 ","25 "]);
