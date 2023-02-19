@@ -6,13 +6,13 @@ let thirdTime = Number(input[2]);
 
 let totalSum = firstTime + secondTime + thirdTime;
 let minuets = (totalSum / 60).toFixed(0);
-totalSum = totalSum - (minuets * 60);
+let seconds = totalSum % 60;
 
 
-if(totalSum <= 10){
-    console.log(`${minuets}:0${totalSum}`);
+if(totalSum < 10){
+    console.log(`${minuets}:0${seconds}`);
 }else{
-    console.log(`${minuets}:${totalSum}`);
+    console.log(`${minuets}:${seconds}`);
 }
 
 
