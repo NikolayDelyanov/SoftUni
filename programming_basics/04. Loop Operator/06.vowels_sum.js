@@ -1,32 +1,32 @@
-function vowelsSum(input){
+function vowelsSum(input) {
 
     let word = input[0];
     let totalValue = 0;
-    
-    for(let index = 0; index < word.length; index++){
+
+    for (let index = 0; index < word.length; index++) {
         let currentCharacter = word.charAt(index);
-    
-        switch(currentCharacter){
+
+        switch (currentCharacter) {
             case 'a':
-             totalValue += 1;
+                totalValue += 1;
                 break;
-             case 'e':
+            case 'e':
                 totalValue += 2;
                 break;
-             case 'i':
+            case 'i':
                 totalValue += 3;
                 break;
-             case 'o':
+            case 'o':
                 totalValue += 4;
                 break;
-             case 'u':
+            case 'u':
                 totalValue += 5;
                 break;
-                default:
-                    console.log(" ");
-                    break;         
+            default:
+                console.log(" ");
+                break;
         }
     }
     console.log(totalValue);
-    }
+}
 vowelsSum(["hello"]);
