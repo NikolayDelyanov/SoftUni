@@ -8,7 +8,7 @@ let numbers = "";
 
 for(let i = start; i <= end; i++){
     if(i % 9 == 0){
-       
+        sum += i;
         numbers += (i + " ");
     }
 }
