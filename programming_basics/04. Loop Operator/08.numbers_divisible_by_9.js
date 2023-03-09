@@ -1,23 +1,23 @@
-function numbersDivisible (input){
+function numbersDivisible(input) {
 
-let start = Number(input[0]);
-let end = Number(input[1]);
+    let start = Number(input[0]);
+    let end = Number(input[1]);
 
-let sum = 0;
+    let sum = 0;
 
 
-for(let i = start; i <= end; i++){
-    if(i % 9 === 0){
-        sum += i;       
+    for (let i = start; i <= end; i++) {
+        if (i % 9 === 0) {
+            sum += i;
+        }
     }
-}
-console.log(`The sum: ${sum}`);
+    console.log(`The sum: ${sum}`);
 
-for(let i = start; i <= end; i++){
-    if(i % 9 === 0){
-    console.log(i);
+    for (let i = start; i <= end; i++) {
+        if (i % 9 === 0) {
+            console.log(i);
+        }
     }
-}
 
 }
 numbersDivisible(["100", "200"]);
