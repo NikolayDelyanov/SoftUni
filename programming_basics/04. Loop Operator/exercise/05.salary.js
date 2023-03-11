@@ -30,23 +30,5 @@ function salary(input) {
         console.log(Math.floor(salary));
     }
 
-
-
 }
-salary(["10",
-
-    "750",
-
-    "Facebook",
-
-    "Dev.bg",
-
-    "Instagram",
-
-    "Facebook",
-
-    "Reddit",
-
-    "Facebook",
-
-    "Facebook"]);
+salary(["10","750","Facebook","Dev.bg","Instagram","Facebook","Reddit","Facebook","Facebook"]);
