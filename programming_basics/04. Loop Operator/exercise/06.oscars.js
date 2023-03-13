@@ -13,13 +13,13 @@ function oscars(input) {
         academyPoints += totalPoints;
 
         if (academyPoints > 1250.5) {
-            console.log(`Congratulations, ${name} got a nominee for leading role with ${academyPoints}!`);
+            console.log(`Congratulations, ${name} got a nominee for leading role with ${academyPoints.toFixed(1)}!`);
             break;
         }
     }
 
     if (academyPoints < 1250.5) {
-        console.log(`Sorry, ${name} you need ${(1250.5 - academyPoints).toFixed(2)} more!`);
+        console.log(`Sorry, ${name} you need ${(1250.5 - academyPoints).toFixed(1)} more!`);
 
     }
 
