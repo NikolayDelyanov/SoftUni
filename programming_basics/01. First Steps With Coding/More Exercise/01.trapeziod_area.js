@@ -4,9 +4,9 @@ function trapeziodArea(input) {
     let b2 = Number(input[1]);
     let h = Number(input[2]);
 
-    let faceOfTriangle = (b1 + b2) * h / 2;
+    let faceOfTrapeziod = (b1 + b2) * h / 2;
 
-    console.log(faceOfTriangle.toFixed(2));
+    console.log(faceOfTrapeziod.toFixed(2));
 
 
 }
