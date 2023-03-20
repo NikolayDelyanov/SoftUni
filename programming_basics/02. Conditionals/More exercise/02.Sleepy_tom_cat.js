@@ -10,17 +10,22 @@ let workDay = oneYear - numberOfdaysOff;
 let workDayPlay = workDay * 63;
 
 let totalTimePlay = workDayPlay + holidayDayPlay;
-let difference = playTimeInYear - totalTimePlay;
+let difference = totalTimePlay - playTimeInYear;
 
-let hours = (difference / 60).toFixed(0);
+let hours = 0;
+let minutes = 0;
 
 if(playTimeInYear < totalTimePlay){
+     hours = (Math.floor(difference / 60).toFixed(0));
+     minutes = Math.floor(difference - (60 * hours)); 
     console.log("Tom will run away");
-    console.log(`${hours} hours and ${difference} minuets more for play`);
+    console.log(`${Math.abs(hours)} hours and ${Math.abs(minutes)} minutes more for play`);
 }else if(playTimeInYear > totalTimePlay){
+     hours = ((difference / 60).toFixed(0));
+     minutes = (difference - (60 * hours));
     console.log("Tom sleeps well");
-    console.log(`${hours} hours and ${difference} minuets less for play`);
+    console.log(`${Math.abs(hours)} hours and ${Math.abs(minutes)} minutes less for play`);
 }
 
 }
-sleepyTomCat(["20"]);
+sleepyTomCat(["75"]);
