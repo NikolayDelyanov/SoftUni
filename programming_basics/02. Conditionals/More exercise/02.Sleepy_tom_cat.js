@@ -16,13 +16,13 @@ function sleepyTomCat(input) {
     let minutes = 0;
 
     if (playTimeInYear < totalTimePlay) {
-        hours = (Math.floor(difference / 60).toFixed(0));
-        minutes = Math.floor(difference - (60 * hours));
+         hours = (Math.floor(difference / 60).toFixed(0));
+         minutes = Math.floor(difference - (hours * 60));
         console.log("Tom will run away");
         console.log(`${Math.abs(hours)} hours and ${Math.abs(minutes)} minutes more for play`);
     } else if (playTimeInYear > totalTimePlay) {
-        hours = ((difference / 60).toFixed(0));
-        minutes = (difference - (60 * hours));
+         hours = ((difference / 60).toFixed(0));
+         minutes = (difference * (hours * 60));
         console.log("Tom sleeps well");
         console.log(`${Math.abs(hours)} hours and ${Math.abs(minutes)} minutes less for play`);
     }
