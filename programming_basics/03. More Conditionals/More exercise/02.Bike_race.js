@@ -27,7 +27,7 @@ function bikeRace(input) {
             seniorsFee = 9.50;
             totalSum = (numJuniors * juniorsFee) + (numSeniors * seniorsFee);
             if (totalJuniorsAndSeniors >= 50) {
-                 totalJuniorsAndSeniors = totalSum * (25 / 100);
+                 totalSum -= 0.25;
             }
             expenses = totalSum * (5 / 100);
             amountDonated = totalSum - expenses;
