@@ -52,4 +52,4 @@ function bikeRace(input) {
     }
 
 }
-bikeRace(["30", "25", "cross-country"]);
+bikeRace(["10", "20", "trail"]);
