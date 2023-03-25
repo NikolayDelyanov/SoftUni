@@ -27,8 +27,10 @@ function flowers(input) {
                 totalPrice = totalPrice + 0.15 * totalPrice;
                 if (numTulipsPurchased > 7) {
                     discount = totalPrice * (5 / 100);
+                    discount = totalPrice - discount;
                 } else if (totalNum > 20) {
                     discount = totalPrice * (20 / 100);
+                    discount = totalPrice - discount;
                 }
             }
             pricePerBouquet = discount + priceToArrange;
@@ -43,6 +45,7 @@ function flowers(input) {
                 totalPrice = totalPrice + 0.15 * totalPrice;
                 if (totalNum > 20) {
                     discount = totalPrice * (20 / 100);
+                    discount = totalPrice - discount;
                 }
             }
             pricePerBouquet = discount + priceToArrange;
@@ -57,6 +60,12 @@ function flowers(input) {
                 totalPrice = totalPrice + 0.15 * totalPrice;
                 if (totalNum > 20) {
                     discount = totalPrice * (20 / 100);
+                    discount = totalPrice - discount;
+                }
+            } else if (holidayOrNot == 'N') {
+                if (totalNum >= 20) {
+                    discount = totalPrice - (totalPrice * 20);
+                    discount = totalPrice - discount;
                 }
             }
             pricePerBouquet = discount + priceToArrange;
@@ -71,8 +80,18 @@ function flowers(input) {
                 totalPrice = totalPrice + 0.15 * totalPrice;
                 if (numRosesPurchased >= 10) {
                     discount = totalPrice * (10 / 100);
+                    discount = totalPrice - discount;
                 } else if (totalNum > 20) {
                     discount = totalPrice * (20 / 100);
+                    discount = totalPrice - discount;
+                }
+            } else if (holidayOrNot == 'N') {
+                if (numRosesPurchased >= 10) {
+                    discount = totalPrice * (10 / 100);
+                    discount = totalPrice - discount;
+                } else if (totalNum >= 20) {
+                    discount = totalPrice - (totalPrice * 20);
+                    discount = totalPrice - discount;
                 }
             }
             pricePerBouquet = discount + priceToArrange;
@@ -82,4 +101,4 @@ function flowers(input) {
 
 
 }
-flowers(["2", "4", "8", "Spring", "Y"]);
+flowers(["3", "10", "9", "Winter", "N"]);
