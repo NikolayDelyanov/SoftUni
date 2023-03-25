@@ -11,6 +11,8 @@ function bikeRace(input) {
     let expenses = 0;
     let amountDonated = 0;
 
+    let totalJuniorsAndSeniors = numJuniors + numSeniors;
+
     switch (route) {
         case 'trail':
             juniorsFee = 5.50;
@@ -24,8 +26,8 @@ function bikeRace(input) {
             juniorsFee = 8.00;
             seniorsFee = 9.50;
             totalSum = (numJuniors * juniorsFee) + (numSeniors * seniorsFee);
-            if (numJuniors >= 50 || numSeniors >= 50) {
-                juniorsFee = juniorsFee * (25 / 100);
+            if (totalJuniorsAndSeniors >= 50) {
+                 totalJuniorsAndSeniors = totalSum * (25 / 100);
             }
             expenses = totalSum * (5 / 100);
             amountDonated = totalSum - expenses;
@@ -50,4 +52,4 @@ function bikeRace(input) {
     }
 
 }
-bikeRace(["10", "20", "trail"]);
+bikeRace(["30", "25", "cross-country"]);
