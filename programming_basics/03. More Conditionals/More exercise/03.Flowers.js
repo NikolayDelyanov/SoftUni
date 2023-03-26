@@ -116,4 +116,4 @@ function flowers(input) {
 
 
 }
-flowers(["10", "10", "10", "Autmn", "N"]);
+flowers(["3", "10", "9", "Spring", "Y"]);
