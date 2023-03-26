@@ -63,7 +63,7 @@ function flowers(input) {
             pricePerBouquet = discount + priceToArrange;
             console.log(pricePerBouquet.toFixed(2));
             break;
-        case 'Autmn':
+        case 'Autumn':
             chrysanthemumsPrice = 3.75;
             rosesPrice = 4.50;
             tulipsPrice = 4.15;
@@ -116,4 +116,4 @@ function flowers(input) {
 
 
 }
-flowers(["3", "10", "9", "Spring", "Y"]);
+flowers(["10", "10", "10", "Autumn", "N"]);
