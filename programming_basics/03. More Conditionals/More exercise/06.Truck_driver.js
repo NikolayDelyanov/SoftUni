@@ -10,6 +10,21 @@ function truckDriver(input) {
 
     switch (season) {
         case 'Spring':
+            if (monthKilometers <= 5000) {
+                oneMonthSalary = monthKilometers * 0.75;
+                totalSalary = oneMonthSalary * oneSeason;
+                tax = totalSalary - (0.1 * totalSalary);
+            } else if (monthKilometers <= 10000) {
+                oneMonthSalary = monthKilometers * 0.95;
+                totalSalary = oneMonthSalary * oneSeason;
+                tax = totalSalary - (0.1 * totalSalary);
+            } else if (monthKilometers <= 20000) {
+                oneMonthSalary = monthKilometers * 1.45;
+                totalSalary = oneMonthSalary * oneSeason;
+                tax = totalSalary - (0.1 * totalSalary);
+            }
+            console.log(tax.toFixed(2));
+            break;
         case 'Autumn':
             if (monthKilometers <= 5000) {
                 oneMonthSalary = monthKilometers * 0.75;
