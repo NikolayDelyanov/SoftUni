@@ -77,4 +77,4 @@ function truckDriver(input) {
 
 
 }
-truckDriver(["Winter", "4350"]);
+truckDriver(["Winter", "4650"]);
