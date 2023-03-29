@@ -64,15 +64,16 @@ switch(season){
         }else if(groupType ==  "girsl"){
             nightPrice = studentsNum * 7.20 * nightsNum;
             sport = 'Athletics';
-        }
-        if(studentsNum >= 50){
-            totalPrice = nightPrice * (50 / 100);
-        }else if(studentsNum >= 20 && studentsNum < 50){
-            totalPrice = nightPrice * (15 / 100);
-        }else if(studentsNum >= 10 && studentsNum < 20){
-            totalPrice = nightPrice * (5 / 100);
-        }
-        else if(groupType == "mixed"){
+            if(studentsNum >= 50){
+                totalPrice = nightPrice * (50 / 100);
+            }else if(studentsNum >= 20 && studentsNum < 50){
+                totalPrice = nightPrice * (15 / 100);
+            }else if(studentsNum >= 10 && studentsNum < 20){
+                totalPrice = nightPrice * (5 / 100);
+            }
+
+
+        }else if(groupType == "mixed"){
             nightPrice = studentsNum * 9.50 * nightsNum;
             sport = 'Cycling';
             if(studentsNum >= 50){
@@ -127,4 +128,4 @@ switch(season){
 
 
 }
-schoolCamp(["Spring","girls","20","7"]);
+schoolCamp(["Summer","girls","20","7"]);
