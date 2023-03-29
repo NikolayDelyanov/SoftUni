@@ -21,6 +21,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -34,6 +36,9 @@ function demo(input) {
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
                 }
+                else {
+                    totalPrice = nightPrice;
+                }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
             case 'Summer':
@@ -45,6 +50,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -60,6 +67,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -72,6 +81,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -84,6 +95,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -99,6 +112,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -111,6 +126,8 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
@@ -123,10 +140,12 @@ function demo(input) {
                     totalPrice = nightPrice - (nightPrice * (15 / 100));
                 } else if (studentsNum >= 10 && studentsNum < 20) {
                     totalPrice = nightPrice - (nightPrice * (5 / 100));
+                } else {
+                    totalPrice = nightPrice;
                 }
                 console.log(`${sport} ${totalPrice.toFixed(2)} lv.`);
                 break;
         }
     }
 }
-demo(["Spring", "girls", "20", "7"]);
+demo(["Winter", "mixed", "9", "15"]);
