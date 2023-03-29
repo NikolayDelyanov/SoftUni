@@ -148,4 +148,4 @@ function demo(input) {
         }
     }
 }
-demo(["Winter", "mixed", "9", "15"]);
+demo(["Summer", "boys", "60", "7"]);
