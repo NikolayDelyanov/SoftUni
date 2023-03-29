@@ -128,4 +128,4 @@ switch(season){
 
 
 }
-schoolCamp(["Summer","girls","20","7"]);
+schoolCamp(["Spring","girls","20","7"]);
