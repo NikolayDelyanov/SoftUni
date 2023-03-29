@@ -24,7 +24,7 @@ switch(season){
                 totalPrice = nightPrice * (5 / 100);
             }
 
-        }else if(groupType ==  "girsl"){
+        }else if(groupType ==  "girls"){
             nightPrice = studentsNum * 9.60 * nightsNum;
             sport = 'Gymnastics';
             if(studentsNum >= 50){
@@ -61,7 +61,7 @@ switch(season){
                 totalPrice = nightPrice * (5 / 100);
             }
 
-        }else if(groupType ==  "girsl"){
+        }else if(groupType ==  "girls"){
             nightPrice = studentsNum * 7.20 * nightsNum;
             sport = 'Athletics';
             if(studentsNum >= 50){
@@ -99,7 +99,7 @@ switch(season){
                 totalPrice = nightPrice * (5 / 100);
             }
 
-        }else if(groupType ==  "girsl"){
+        }else if(groupType ==  "girls"){
             nightPrice = studentsNum * 15 * nightsNum;
             sport = 'Volleyball';
             if(studentsNum >= 50){
