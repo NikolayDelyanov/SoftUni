@@ -10,7 +10,7 @@ for(let i = 1800; i <= year; i++){
         inheritedMoney -= 12000;
     }else{
         inheritedMoney -= 12000 + (50 * (ivanchoAge + 2));
-        ivanchoAge++;
+
     }
 }
 
