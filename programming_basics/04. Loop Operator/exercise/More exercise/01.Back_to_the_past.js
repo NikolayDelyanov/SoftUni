@@ -5,12 +5,12 @@ let year = Number(input[1]);
 
 let ivanchoAge = 18;
 
-
 for(let i = 1800; i <= year; i++){
     if(i % 2 === 0){
         inheritedMoney -= 12000;
     }else{
-        inheritedMoney -= 12000 + (50 * (ivanchoAge + 1));
+        inheritedMoney -= 12000 + (50 * (ivanchoAge + 2));
+        ivanchoAge++;
     }
 }
 
