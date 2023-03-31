@@ -8,6 +8,7 @@ function sumOfNumbers(input) {
         let currentDigit = Number(word.charAt(index));
         totalValue += currentDigit;
     }
+    
     console.log(`The sum of the digits is:${totalValue}`);
 
 }
