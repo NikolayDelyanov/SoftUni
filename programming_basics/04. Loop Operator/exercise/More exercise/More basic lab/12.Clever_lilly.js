@@ -30,8 +30,8 @@ if (totalSavedMoney >= washingMachinePrice) {
 
 
 }
-cleverLilly(["21",
+cleverLilly(["10",
 
-"1570.98",
+"170.00",
 
-"3"]);
+"6"]);
