@@ -13,7 +13,7 @@ for (let index = 3; index < input.length; index += 2){
     academyPoints += totalPoints;
     
 if(academyPoints > 1250.5){
-    console.log(`Congratulations, ${actorName} got a nominee for leading role with ${academyPoints.toFixed(2)}!`);
+    console.log(`Congratulations, ${actorName} got a nominee for leading role with ${academyPoints.toFixed(1)}!`);
     break;
 }
 }
