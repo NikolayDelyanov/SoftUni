@@ -21,6 +21,7 @@ for (let index = 2; index <= input.length; index++) {
 
     if(salary <= 0){
         console.log(`You have lost your salary.`);
+        break;
     } 
 }
 
