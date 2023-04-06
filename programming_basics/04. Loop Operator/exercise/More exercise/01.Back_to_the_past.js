@@ -31,4 +31,4 @@ if(inheritedMoney >= remainder){
 }
 
 }
-backToThePast(["100000.15","1808"]);
+backToThePast(["50000","1802"]);
