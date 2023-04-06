@@ -7,7 +7,7 @@ function hospital(input) {
     let numExamined = 0;
     let numUnexamined = 0;
 
-    for (let index = 1; index <= array.length; index++) {
+    for (let index = 1; index <= input.length; index++) {
         let numPatientsPerDay = input[index];
 
         if (numDoctors >= numPatientsPerDay) {
