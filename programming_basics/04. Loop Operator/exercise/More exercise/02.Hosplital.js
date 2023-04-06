@@ -18,8 +18,7 @@ function hospital(input) {
             numUnexamined += numPatientsPerDay;
         }
 
-
     }
 
 }
-hospital
+hospital(["4","7","27","9","1"]);
