@@ -2,10 +2,8 @@ function hospital(input) {
 
     let periodOfTime = Number(input[0]);
 
-
-
     for (let index = 1; index <= input.length; index++) {
-        let numPatientsPerDay = input[index];
+        let numPatientsPerDay = Number(input[index]);
 
         let numDoctors = 7;
         let numExamined = 0;
@@ -20,7 +18,7 @@ function hospital(input) {
             numUnexamined = numPatientsPerDay - numExamined;
         }
 
-        if (numPatientsPerDay % 3 === 0 && numUnexamined > numExamined){
+        if (index % 3 === 0 && numUnexamined > numExamined) {
             numDoctors += 1;
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
@@ -29,4 +27,4 @@ function hospital(input) {
     }
 
 }
-hospital(["4","7","27","9","1"]);
+hospital(["4", "7", "27", "9", "1"]);
