@@ -19,16 +19,13 @@ function hospital(input) {
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
         }
-    }
-    for (let index = 3; index <= input.length; index += 3) {
-        let numPatientsPerDay = input[index];
 
-        if (index % 3 === 0 && numUnexamined > numExamined){
+        if (numPatientsPerDay % 3 === 0 && numUnexamined > numExamined){
             numDoctors += 1;
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
         }
-        
+
     }
 
 }
