@@ -19,19 +19,17 @@ function hospital(input) {
             numUnexamined = numPatientsPerDay - numExamined;
         }
 
-        let totalExamined = (numExamined * 2) + numExamined;
-        let totalUnexamined = numUnexamined;
-
         if (index % 3 === 0 && numDoctors < numPatientsPerDay) {
             numDoctors++;
             numUnexamined--;
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
         }
+
+        let totalExamined = (numExamined * 2) + numExamined;
+        let totalUnexamined = numUnexamined;
         
-
     }
-
 
 }
 hospital(["4", "7", "27", "9", "1"]);
