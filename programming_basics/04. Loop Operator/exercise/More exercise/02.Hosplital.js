@@ -28,7 +28,7 @@ function hospital(input) {
 
         let totalExamined = (numExamined * 2) + numExamined;
         let totalUnexamined = numUnexamined;
-        
+
     }
 
 }
