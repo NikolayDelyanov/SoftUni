@@ -11,8 +11,6 @@ function hospital(input) {
 
         let totalExamined = 0;
         let totalUnexamined = 0;
-        let totalExaminedSecond = 0;
-        let totalUnexaminedSecond = 0;
 
         if (numDoctors >= numPatientsPerDay) {
             numExamined = numPatientsPerDay;
@@ -30,7 +28,7 @@ function hospital(input) {
 
         }
 
-        if (index % 3 === 0 && numDoctors < totalExamined) {
+        if (index % 3 === 0 && numDoctors < numPatientsPerDay) {
             numDoctors++;
             numUnexamined--;
             numExamined = numDoctors;
