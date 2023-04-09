@@ -9,25 +9,39 @@ function hospital(input) {
         let numExamined = 0;
         let numUnexamined = 0;
 
+        let totalExamined = 0;
+        let totalUnexamined = 0;
+        let totalExaminedSecond = 0;
+        let totalUnexaminedSecond = 0;
+
         if (numDoctors >= numPatientsPerDay) {
             numExamined = numPatientsPerDay;
             numDoctors -= numPatientsPerDay;
             numUnexamined = numPatientsPerDay - numExamined;
+            totalExamined = (numExamined * 2); 
+            totalUnexamined = numUnexamined;
+
 
         } else {
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
+            totalExamined = (numExamined * 2); 
+            totalUnexamined = numUnexamined;
+
         }
 
-        if (index % 3 === 0 && numDoctors < numPatientsPerDay) {
+        if (index % 3 === 0 && numDoctors < totalExamined) {
             numDoctors++;
             numUnexamined--;
             numExamined = numDoctors;
             numUnexamined = numPatientsPerDay - numExamined;
-        }
+            totalExamined += numExamined;
+            totalUnexamined += numUnexamined;
 
-        let totalExamined = (numExamined * 2) + numExamined;
-        let totalUnexamined = numUnexamined;
+        }
+        console.log(`Treated patients: ${totalExamined}.`);
+        console.log(`Untreated patients: ${totalUnexamined}.`);
+         
 
     }
 
