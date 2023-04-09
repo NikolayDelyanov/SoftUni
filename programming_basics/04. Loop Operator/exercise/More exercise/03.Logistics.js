@@ -9,10 +9,7 @@ function logisticts(input) {
         let totalCargo = (input[index + 1]);
         let averagePerTon = 0;
 
-    
-
     }
-
 
 }
 logisticts(["4", "1", "5", "16", "3"]);
