@@ -9,7 +9,7 @@ function hospital(input) {
 
     for (let index = 1; index <= input.length - 1; index++) {
         let numPatientsPerDay = Number(input[index]);
-       
+
         let numExamined = 0;
         let numUnexamined = 0;
 
@@ -26,15 +26,11 @@ function hospital(input) {
             numUnexamined = numPatientsPerDay - numExamined;
             totalExamined += numExamined;
             totalUnexamined += numUnexamined;
-
         }
-        
     }
 
     console.log(`Treated patients: ${totalExamined}.`);
-        console.log(`Untreated patients: ${totalUnexamined}.`);
-
-
+    console.log(`Untreated patients: ${totalUnexamined}.`);
 
 }
 hospital(["4", "7", "27", "9", "1"]);
