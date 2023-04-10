@@ -29,4 +29,4 @@ function backToThePast(input) {
     }
 
 }
-backToThePast(["50000", "1802"]);
+backToThePast(["100000.15", "1808"]);
