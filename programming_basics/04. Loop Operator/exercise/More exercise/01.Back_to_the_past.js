@@ -25,7 +25,8 @@ function backToThePast(input) {
     if (inheritanceMoney > 0) {
         console.log(`Yes! He will live a carefree life and will have ${(Math.abs(inheritanceMoney)).toFixed(2)} dollars left.`);
     } else {
-        console.log(`He will need ${(Math.abs(inheritanceMoney)).toFixed(2)} dollars to survive.`);
+        let moneyNeeded = spentMoney - inheritanceMoney;
+        console.log(`He will need ${(Math.abs(moneyNeeded)).toFixed(2)} dollars to survive.`);
     }
 
 }
