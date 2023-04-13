@@ -61,6 +61,7 @@ if(joinerysSize == "90X130"){
         price = price - 0.04 * price;
     }else if(numJoinery < 10){
         console.log("Invalid order");
+        return;
     }
 
 } else if(joinerysSize == "200X300"){
