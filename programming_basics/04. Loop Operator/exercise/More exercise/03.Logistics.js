@@ -14,7 +14,6 @@ for (let index = 1; index < input.length; index++) {
     let tonnage = Number(input[index]);
     totalLoads += tonnage;
     
-    
 }
 
 }
