@@ -17,7 +17,7 @@ function balls(input) {
         if (numColor == "red") {
             points += 5;
             numRedBalls++;
-
+            
         } else if (numColor == "orange") {
             points += 10;
             numOrangeBalls++;
@@ -38,6 +38,7 @@ function balls(input) {
             otherNum++;
         }
     }
+
     console.log(`Total points: ${Math.floor(points)}`);
     console.log(`Red balls: ${numRedBalls}`);
     console.log(`Orange balls: ${numOrangeBalls}`);
