@@ -2,11 +2,6 @@ function logisticts(input) {
 
     let loadsNum = Number(input[0]);
 
-    let microbus = 0;
-    let truck = 0;
-    let train = 0;
-    let vehicle = 0;
-
     let totalLoads = 0;
     let average = 0;
 
