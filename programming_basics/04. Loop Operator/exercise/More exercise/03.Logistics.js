@@ -18,9 +18,9 @@ function logisticts(input) {
         let tonnage = Number(input[index]);
         totalLoads += tonnage;
 
-        if(tonnage <= 4){
+        if(tonnage <= 3){
             sum1 = input[index];
-        } else if(tonnage <= 11){
+        } else if(tonnage >= 4 && tonnage <= 11){
             sum2 = input[index];
         } else if(tonnage >= 12){
             sum3 = input[index];
