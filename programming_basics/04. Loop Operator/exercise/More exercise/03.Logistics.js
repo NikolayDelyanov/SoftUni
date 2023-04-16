@@ -29,5 +29,10 @@ function logisticts(input) {
 
     average = (sum1 * 200 + sum2 * 175 + sum3 * 120)/totalLoads;
 
+    console.log(average.toFixed(2));
+    console.log(`${((sum1/totalLoads)*100).toFixed(2)}%`);
+    console.log(`${((sum2/totalLoads)*100).toFixed(2)}%`);
+    console.log(`${((sum3/totalLoads)*100).toFixed(2)}%`);
+
 }
 logisticts(["4", "1", "5", "16", "3"]);
