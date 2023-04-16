@@ -16,9 +16,9 @@ function logisticts(input) {
         if (tonnage <= 3) {
             sum1 += Number(input[index]);
         } else if (tonnage >= 4 && tonnage <= 11) {
-            sum2 = input[index];
+            sum2 += Number(input[index]);
         } else if (tonnage >= 12) {
-            sum3 = input[index];
+            sum3 += Number(input[index]);
         }
     }
 
@@ -30,4 +30,4 @@ function logisticts(input) {
     console.log(`${((sum3 / totalLoads) * 100).toFixed(2)}%`);
 
 }
-logisticts(["4", "1", "5", "16", "3"]);
+logisticts(["5", "2", "10", "20", "1","7"]);
