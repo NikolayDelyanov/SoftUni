@@ -30,4 +30,4 @@ function logisticts(input) {
     console.log(`${((sum3 / totalLoads) * 100).toFixed(2)}%`);
 
 }
-logisticts(["5", "2", "10", "20", "1","7"]);
+logisticts(["5", "2", "10", "20", "1", "7"]);
