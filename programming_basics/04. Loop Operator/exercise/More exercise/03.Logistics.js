@@ -13,22 +13,21 @@ function logisticts(input) {
         let tonnage = Number(input[index]);
         totalLoads += tonnage;
 
-        if(tonnage <= 3){
-            sum1++;
+        if (tonnage <= 3) {
             sum1 = input[index];
-        } else if(tonnage >= 4 && tonnage <= 11){
+        } else if (tonnage >= 4 && tonnage <= 11) {
             sum2 = input[index];
-        } else if(tonnage >= 12){
+        } else if (tonnage >= 12) {
             sum3 = input[index];
         }
     }
 
-    average = (sum1 * 200 + sum2 * 175 + sum3 * 120)/totalLoads;
+    average = (sum1 * 200 + sum2 * 175 + sum3 * 120) / totalLoads;
 
     console.log(average.toFixed(2));
-    console.log(`${((sum1/totalLoads)*100).toFixed(2)}%`);
-    console.log(`${((sum2/totalLoads)*100).toFixed(2)}%`);
-    console.log(`${((sum3/totalLoads)*100).toFixed(2)}%`);
+    console.log(`${((sum1 / totalLoads) * 100).toFixed(2)}%`);
+    console.log(`${((sum2 / totalLoads) * 100).toFixed(2)}%`);
+    console.log(`${((sum3 / totalLoads) * 100).toFixed(2)}%`);
 
 }
 logisticts(["4", "1", "5", "16", "3"]);
