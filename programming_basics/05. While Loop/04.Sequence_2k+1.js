@@ -11,6 +11,5 @@ while(current <= num){
     current = (current * 2) + 1;
 }
 
-
 }
 sequence(["31"]);
