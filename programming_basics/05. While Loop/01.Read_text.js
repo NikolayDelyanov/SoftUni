@@ -6,7 +6,6 @@ while (input[index] !== "Stop"){
    index++;
 }
 
-
 }
 readText(["Nakov",
 "SoftUni",
