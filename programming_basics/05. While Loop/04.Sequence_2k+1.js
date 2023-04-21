@@ -12,4 +12,4 @@ function sequence(input) {
     }
 
 }
-sequence(["17"]);
+sequence(["31"]);
