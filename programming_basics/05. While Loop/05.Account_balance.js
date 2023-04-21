@@ -11,14 +11,14 @@ function balance(input){
             break;
         }
         
-        console.log("Increase: " + increase);
+        console.log("Increase: " + increase.toFixed(2));
         sum += increase;
         index++;
         command = input[index];
         
     }
 
-    console.log("Total: " + sum);
+    console.log("Total: " + sum.toFixed(2));
 
 
 }
