@@ -14,7 +14,7 @@ function balance(input){
         console.log("Increase: " + increase);
         sum += increase;
         index++;
-        command = input[index];
+        
     }
 
     console.log("Total: " + sum);
