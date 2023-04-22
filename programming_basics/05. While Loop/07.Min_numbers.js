@@ -14,16 +14,13 @@ function minNumber(input){
         command = input[index];
     
     }
-    
+
     console.log(min);
     
     }
+    
     minNumber(["100",
-
     "99",
-    
     "80",
-    
     "70",
-    
     "Stop"]);
