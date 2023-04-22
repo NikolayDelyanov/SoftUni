@@ -16,7 +16,6 @@ while(command !== "Stop"){
 }
 console.log(max);
 
-
 }
 maxNumber(["100",
 "99",
