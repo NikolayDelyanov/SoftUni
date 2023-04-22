@@ -14,6 +14,7 @@ function maxNumber(input) {
         command = input[index];
 
     }
+    
     console.log(max);
 
 }
