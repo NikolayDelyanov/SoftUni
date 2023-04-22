@@ -7,14 +7,16 @@ function maxNumber(input) {
     while (command !== "Stop") {
         max = Number(max);
         let value = Number(command);
+
         if (value > max) {
             max = value;
         }
+        
         index++;
         command = input[index];
 
     }
-    
+
     console.log(max);
 
 }
