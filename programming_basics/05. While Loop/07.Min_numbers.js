@@ -7,9 +7,11 @@ function minNumber(input) {
     while (command !== "Stop") {
         min = Number(min);
         let value = Number(command);
+
         if (min > value) {
             min = value;
         }
+        
         index++;
         command = input[index];
 
