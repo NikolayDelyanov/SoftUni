@@ -14,6 +14,7 @@ function minNumber(input){
         command = input[index];
     
     }
+    
     console.log(min);
     
     }
