@@ -8,7 +8,7 @@ let total = 0;
 while (grades <= 12){
     index++;
     let grade = Number(input[index]);
-    if(grade < 4.00){
+    if(grade >= 4.00){
         continue;
         
         if(grade < 4.00){
