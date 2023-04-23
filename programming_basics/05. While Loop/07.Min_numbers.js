@@ -21,7 +21,7 @@ function minNumber(input) {
 
 }
 minNumber(["100",
-    "84",
-    "30",
-    "20",
+    "99",
+    "80",
+    "70",
     "Stop"]);
