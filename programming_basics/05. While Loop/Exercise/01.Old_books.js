@@ -23,9 +23,6 @@ if(bookIsFound === false){
 
 }
 oldBooks(["Troy",
-
 "Stronger",
-
 "Life Style",
-
 "Troy"]);
