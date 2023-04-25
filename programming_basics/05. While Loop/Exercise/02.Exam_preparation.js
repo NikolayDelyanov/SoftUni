@@ -2,4 +2,3 @@ function exam(input){
 
 
 }
-exam
