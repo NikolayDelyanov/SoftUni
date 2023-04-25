@@ -34,6 +34,5 @@ while(inCoins > 0){
 
 console.log(coinsCounter);
 
-
 }
 coins(["2.73"]);
