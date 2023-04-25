@@ -41,13 +41,8 @@ if(currentMoney >= needMoney){
 
 }
 vacantion(["2000",
-
 "1000",
-
 "spend",
-
 "1200",
-
 "save",
-
 "2000"]);
