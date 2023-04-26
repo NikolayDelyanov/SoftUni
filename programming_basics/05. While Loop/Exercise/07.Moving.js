@@ -21,8 +21,8 @@ while(command !== 'Done'){
     index++;
     command = input[index];
 
-
 }
+
 if(command === 'Done' && freeSpace > cartonsNum){
     console.log(`${freeSpace - cartonsNum} Cubic meters left.`);
 }
