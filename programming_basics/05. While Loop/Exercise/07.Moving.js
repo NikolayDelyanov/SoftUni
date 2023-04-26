@@ -27,8 +27,6 @@ if(command === 'Done' && freeSpace > cartonsNum){
     console.log(`${freeSpace - cartonsNum} Cubic meters left.`);
 }
 
-
-
 }
 moving(["10",
 
