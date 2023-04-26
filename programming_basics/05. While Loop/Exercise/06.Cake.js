@@ -20,13 +20,13 @@ function cake(input) {
 
         index++;
         command = input[index];
+
     }
 
     if (command === 'STOP' && numPieces <= cakeSize) {
         console.log(`${cakeSize - numPieces} pieces are left.`);
     }
-
-
+    
 }
 cake[("10",
     "10",
