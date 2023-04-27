@@ -14,7 +14,7 @@ function dishwasher(input) {
 
         let dishCounter = Number(dishesNum);
 
-        if (dishCounter % 3 === 1) {
+        if (index % 3 === 0) {
             dishCounter = dishCounter * onePot;
             totalPreparation -= dishCounter;
             potSum += Number(dishesNum);;
@@ -25,7 +25,7 @@ function dishwasher(input) {
         }
 
         if (totalPreparation < 0) {
-            console.log(`Not enough detergent, ${dishCounter - totalPreparation} ml. more necessary`);
+            console.log(`Not enough detergent, ${Math.abs(totalPreparation)} ml. more necessary`);
             break;
         }
 
