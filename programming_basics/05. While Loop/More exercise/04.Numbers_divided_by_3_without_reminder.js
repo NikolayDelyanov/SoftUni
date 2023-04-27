@@ -1,10 +1,10 @@
-function numsDividedBy3(){
+function numsDividedBy3() {
 
-for(let i = 1; i <= 100; i++){
-    if(i % 3 === 0){
-        console.log(i);
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0) {
+            console.log(i);
+        }
     }
-}
 
 }
 numsDividedBy3();
