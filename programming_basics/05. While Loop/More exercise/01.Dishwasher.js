@@ -14,7 +14,7 @@ while(dishesNum !== 'End'){
 
     let dishCounter = Number(dishesNum);
 
-    if(dishesNum % 3 === 1){
+    if(dishCounter % 3 === 1){
         dishCounter = dishCounter * onePot;
         totalPreparation -= dishCounter;
         potSum +=  Number(dishesNum);;
@@ -42,4 +42,4 @@ if(totalPreparation > 0){
 
 
 }
-dishwasher(["2","53","65","55","End"]);
+dishwasher(["1","10","15","10","12","13","30"]);
