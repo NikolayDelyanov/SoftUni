@@ -12,6 +12,5 @@ function average(input) {
 
     console.log(result.toFixed(2));
 
-
 }
 average(["4", "3", "2", "4", "2"]);
