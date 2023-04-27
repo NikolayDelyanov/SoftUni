@@ -7,6 +7,8 @@ let onePot = 15;
 let index = 1;
 let dishesNum = input[index];
 let totalPreparation = preparationNum * bottlePreparation;
+let sumDish = 0;
+let potSum = 0;
 
 while(dishesNum !== 'End'){
 
@@ -15,9 +17,11 @@ while(dishesNum !== 'End'){
     if(dishCounter % 3 === 1){
         dishCounter = dishCounter * onePot;
         totalPreparation -= dishCounter;
+        potSum +=  Number(dishesNum);;
     } else{
         dishCounter = dishCounter * oneDish;
         totalPreparation -= dishCounter;
+        sumDish += Number(dishesNum);
     }
 
     index++;
