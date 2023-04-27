@@ -14,7 +14,7 @@ while(dishesNum !== 'End'){
 
     let dishCounter = Number(dishesNum);
 
-    if(dishCounter % 3 === 1){
+    if(dishesNum % 3 === 1){
         dishCounter = dishCounter * onePot;
         totalPreparation -= dishCounter;
         potSum +=  Number(dishesNum);;
@@ -22,6 +22,11 @@ while(dishesNum !== 'End'){
         dishCounter = dishCounter * oneDish;
         totalPreparation -= dishCounter;
         sumDish += Number(dishesNum);
+    }
+
+    if(totalPreparation < 0){
+        console.log(`Not enough detergent, ${dishCounter - totalPreparation} ml. more necessary`);
+        break;
     }
 
     index++;
@@ -33,11 +38,8 @@ if(totalPreparation > 0){
     console.log("Detergent was enough!");
     console.log(`${sumDish} dishes and ${potSum} pots were washed`);
     console.log(`Leftover detergent ${totalPreparation} ml.`);
-    
-} else if(dishCounter > totalPreparation){
-    console.log(`Not enough detergent, ${totalPreparation - dishCounter} ml. more necessary`);
 }
 
 
 }
-dishwasher(["1","10","15","10","12","13","30","End"]);
+dishwasher(["2","53","65","55","End"]);
