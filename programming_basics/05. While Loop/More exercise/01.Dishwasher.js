@@ -25,21 +25,19 @@ function dishwasher(input) {
         }
 
         if (totalPreparation < 0) {
-            console.log(`Not enough detergent, ${Math.abs(totalPreparation)} ml. more necessary`);
+            console.log(`Not enough detergent, ${Math.abs(totalPreparation)} ml. more necessary!`);
             break;
         }
 
         index++;
         dishesNum = input[index];
-
     }
 
     if (totalPreparation > 0) {
         console.log("Detergent was enough!");
-        console.log(`${sumDish} dishes and ${potSum} pots were washed`);
+        console.log(`${sumDish} dishes and ${potSum} pots were washed.`);
         console.log(`Leftover detergent ${totalPreparation} ml.`);
     }
-
 
 }
 dishwasher(["1", "10", "15", "10", "12", "13", "30"]);
