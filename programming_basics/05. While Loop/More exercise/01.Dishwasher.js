@@ -31,9 +31,13 @@ while(dishesNum !== 'End'){
 
 if(totalPreparation > 0){
     console.log("Detergent was enough!");
+    console.log(`${sumDish} dishes and ${potSum} pots were washed`);
+    console.log(`Leftover detergent ${totalPreparation} ml.`);
     
+} else if(dishCounter > totalPreparation){
+    console.log(`Not enough detergent, ${totalPreparation - dishCounter} ml. more necessary`);
 }
 
 
 }
-dishwasher(["2","53","65","55","End"]);
+dishwasher(["1","10","15","10","12","13","30","End"]);
