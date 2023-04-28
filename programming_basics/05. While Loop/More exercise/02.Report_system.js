@@ -13,21 +13,21 @@ while(command !== 'End'){
     totalSum += transaction;
 
     if(index % 2 === 0){
-        cashPayment = transaction;
+        cashPayment++;
 
-        if(transaction > 100){
+        if(transaction > 100 ){
             console.log("Error in transaction!");
-            continue;
+            
         }else{
             console.log("Product sold!");
         }
 
     }else {
-        cardPayment = transaction;
+        cardPayment++;
 
         if(transaction < 10){
             console.log("Error in transaction!");
-            continue;
+            
         } else {
             console.log("Product sold!");
         }
