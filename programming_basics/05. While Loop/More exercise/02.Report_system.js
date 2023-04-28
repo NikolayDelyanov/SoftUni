@@ -1,43 +1,43 @@
-function reportSystem(input){
+function reportSystem(input) {
 
-let sum = Number(input[0]);
-let cashPayment = 0;
-let cardPayment = 0;
-let index = 1;
-let command = input[index];
-let totalSum = 0;
+    let sum = Number(input[0]);
+    let cashPayment = 0;
+    let cardPayment = 0;
+    let index = 1;
+    let command = input[index];
+    let totalSum = 0;
 
-while(command !== 'End'){
+    while (command !== 'End') {
 
-    let transaction = Number(command);
-    totalSum += transaction;
+        let transaction = Number(command);
+        totalSum += transaction;
 
-    if(index % 2 === 0){
-        cashPayment = transaction;
+        if (index % 2 === 0) {
+            cashPayment = transaction;
 
-        if(transaction > 100){
-            console.log("Error in transaction!");
-            continue;
-        }else{
-            console.log("Product sold!");
-        }
+            if (transaction > 100) {
+                console.log("Error in transaction!");
+                continue;
+            } else {
+                console.log("Product sold!");
+            }
 
-    }else {
-        cardPayment = transaction;
-
-        if(transaction < 10){
-            console.log("Error in transaction!");
-            continue;
         } else {
-            console.log("Product sold!");
+            cardPayment = transaction;
+
+            if (transaction < 10) {
+                console.log("Error in transaction!");
+                continue;
+            } else {
+                console.log("Product sold!");
+            }
         }
+
+        index++;
+        command = input[index];
+
     }
 
-    index++;
-    command = input[index];
 
 }
-
-
-}
-reportSystem(["500","120","8","63","256","78","317"]);
+reportSystem(["500", "120", "8", "63", "256", "78", "317"]);
