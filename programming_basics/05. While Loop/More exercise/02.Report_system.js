@@ -12,16 +12,16 @@ function reportSystem(input) {
     while (command !== 'End') {
 
         let transaction = Number(command);
-        
+
 
         if (index % 2 === 0) {
             transaction += cardPayment;
 
             if (transaction < 10) {
                 console.log("Error in transaction!");
-            } 
+            }
 
-            if(transaction > 10) {
+            if (transaction > 10) {
                 console.log("Product sold!");
                 totalSum += transaction;
                 totalCard += Number(input[index]);
@@ -32,29 +32,28 @@ function reportSystem(input) {
 
             if (transaction > 100) {
                 console.log("Error in transaction!");
-            } 
+            }
 
-            if(transaction < 100){
+            if (transaction < 100) {
                 console.log("Product sold!");
                 totalSum += transaction;
                 totalCash += Number(input[index]);
             }
         }
 
-        if(totalSum >= sum){
-    
-        break;
-         } 
+        if (totalSum >= sum) {
+            break;
+        }
 
         index++;
         command = input[index];
 
     }
 
-    if(totalSum >= sum){
+    if (totalSum >= sum) {
         console.log(`Average CS: ${(totalCash / 2).toFixed(2)}`);
         console.log(`Average CC: ${(totalCard / 2).toFixed(2)}`);
-    } else  if(command === 'End'){
+    } else if (command === 'End') {
         console.log("Failed to collect required money for charity.");
     }
 
