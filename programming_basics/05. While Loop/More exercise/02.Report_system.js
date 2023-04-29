@@ -13,32 +13,31 @@ function reportSystem(input) {
 
         let transaction = Number(command);
 
-
         if (index % 2 === 0) {
             transaction += cardPayment;
 
-                     if (transaction < 10) {
-                          console.log("Error in transaction!");
-                     }
+            if (transaction < 10) {
+                console.log("Error in transaction!");
+            }
 
-                     if (transaction > 10) {
-                          console.log("Product sold!");
-                          totalSum += transaction;
-                          totalCard += Number(input[index]);
-                     }
+            if (transaction > 10) {
+                console.log("Product sold!");
+                totalSum += transaction;
+                totalCard += Number(input[index]);
+            }
 
         } else {
             transaction += cashPayment;
 
-                     if (transaction > 100) {
-                          console.log("Error in transaction!");
-                     }
+            if (transaction > 100) {
+                console.log("Error in transaction!");
+            }
 
-                     if (transaction < 100) {
-                          console.log("Product sold!");
-                          totalSum += transaction;
-                          totalCash += Number(input[index]);
-                     }
+            if (transaction < 100) {
+                console.log("Product sold!");
+                totalSum += transaction;
+                totalCash += Number(input[index]);
+            }
         }
 
         if (totalSum >= sum) {
