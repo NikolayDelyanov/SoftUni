@@ -10,7 +10,7 @@ function reportSystem(input) {
     let totalCard = 0;
 
     while (command !== 'End') {
-
+        
         let transaction = Number(command);
 
         if (index % 2 === 0) {
@@ -54,7 +54,6 @@ function reportSystem(input) {
     } else if (command === 'End') {
         console.log("Failed to collect required money for charity.");
     }
-
 
 }
 reportSystem(["500", "120", "8", "63", "256", "78", "317"]);
