@@ -42,10 +42,9 @@ function reportSystem(input) {
         }
 
         if(totalSum >= sum){
+    
         break;
-    } else  if(command === 'End'){
-         break;
-    }
+         } 
 
         index++;
         command = input[index];
