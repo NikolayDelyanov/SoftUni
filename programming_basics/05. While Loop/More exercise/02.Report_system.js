@@ -47,7 +47,6 @@ function reportSystem(input) {
 
         index++;
         command = input[index];
-
     }
 
     if (totalSum >= sum) {
