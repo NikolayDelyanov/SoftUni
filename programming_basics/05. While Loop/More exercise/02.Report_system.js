@@ -56,4 +56,4 @@ function reportSystem(input) {
     }
 
 }
-reportSystem(["500", "120", "8", "63", "256", "78", "317"]);
+reportSystem(["500", "120", "8", "63", "256", "78", "317","End"]);
