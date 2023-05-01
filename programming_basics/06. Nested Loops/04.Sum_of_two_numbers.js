@@ -18,9 +18,11 @@ for(let i = start; i <= end; i++){
             break;
         }
     }
+
     if(flag == true){
         break;
     }
+    
 }
 
 if(flag == false){
