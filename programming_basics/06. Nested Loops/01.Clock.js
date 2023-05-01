@@ -5,15 +5,15 @@ function clock(input) {
             let hours = "";
             let minutes = "";
 
-            if(h < 10){
+            if (h < 10) {
                 hours = `0${h}`;
-            } else{
+            } else {
                 hours = `${h}`;
             }
 
-            if(m < 10){
+            if (m < 10) {
                 minutes = `0${m}`;
-            } else{
+            } else {
                 minutes = `${m}`;
             }
 
