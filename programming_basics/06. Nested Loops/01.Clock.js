@@ -18,9 +18,8 @@ function clock(input) {
             }
 
             console.log(`${hours}:${minutes}`);
+
         }
     }
-
-
 }
 clock();
