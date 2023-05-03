@@ -14,6 +14,5 @@ function combinations(input) {
     }
 
     console.log(validCombinationsCount);
-
 }
 combinations(["25"]);
