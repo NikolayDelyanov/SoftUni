@@ -22,7 +22,5 @@ for(let rows = 1; rows <= num; rows++){
         break;
     }
 }
-
-
 }
 numberPyramid(["15"]);
