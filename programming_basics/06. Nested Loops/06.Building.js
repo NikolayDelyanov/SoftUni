@@ -5,6 +5,7 @@ let roomCount = Number(input[1]);
 
 for(let floorNumber = floorCount; floorNumber >= 1; floorNumber--){
     let roomType = "";
+
     if(floorNumber === floorCount){
         roomType = "L";
     } else if(floorNumber % 2 == 0){
@@ -19,9 +20,7 @@ for(let floorNumber = floorCount; floorNumber >= 1; floorNumber--){
     }
 
     console.log(floor);
-
 }
-
 
 }
 building(["6",
