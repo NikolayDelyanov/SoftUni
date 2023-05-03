@@ -8,7 +8,7 @@ for(let floorNumber = floorCount; floorNumber >= 1; floorNumber--){
     if(floorNumber === floorCount){
         roomType = "L";
     } else if(floorNumber % 2 == 0){
-        roomCount = "O";
+        roomType = "O";
     } else {
         roomType = "A";
     }
@@ -25,5 +25,4 @@ for(let floorNumber = floorCount; floorNumber >= 1; floorNumber--){
 
 }
 building(["6",
-
 "4"]);
