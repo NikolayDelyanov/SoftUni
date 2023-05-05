@@ -36,8 +36,8 @@ while(command !== 'Finish'){
         }
 
         ticketType = input[++index];
-
     }
+
     totalTicketsCounter += ticketCounter;
     let resultSingleFilm = ticketCounter / freeSpaces * 100;
 
@@ -49,7 +49,6 @@ console.log(`Total tickets: ${totalTicketsCounter}`);
 console.log(`${(studentCounter / totalTicketsCounter * 100).toFixed(2)}% student tickets.`);
 console.log(`${(standardCounter / totalTicketsCounter * 100).toFixed(2)}% standard tickets.`);
 console.log(`${(kidsCounter / totalTicketsCounter * 100).toFixed(2)}% kids tickets.`);
-
 
 
 }
