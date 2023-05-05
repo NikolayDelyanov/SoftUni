@@ -23,4 +23,4 @@ function numberPyramid(input) {
         }
     }
 }
-numberPyramid(["15"]);
+numberPyramid(["47"]);
