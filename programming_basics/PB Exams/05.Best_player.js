@@ -25,13 +25,9 @@ function bestPlayer(input) {
             break;
         }
 
-        
         index++;
         command = input[index];
-
     }
-
-
 
 }
 bestPlayer(["Neymar",
