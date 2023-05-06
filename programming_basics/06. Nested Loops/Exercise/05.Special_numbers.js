@@ -18,7 +18,9 @@ function specialNumbers(input) {
             }
         }
     }
+
     console.log(output);
 
 }
+
 specialNumbers(["3"]);
