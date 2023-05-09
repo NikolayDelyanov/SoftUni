@@ -4,26 +4,25 @@ function bestPlayer(input) {
     let command = input[index];
     let bestPlayer = '';
     let maxGoals = 0;
-    let currentGoals = false;
 
     while (command !== 'END') {
         index++;
-        let goals = Number(input[index]);
-        maxGoals = goals;
+        let futtballerGoals = Number(input[index]);
+        maxGoals += futtballerGoals;
 
-        if (goals < maxGoals) {
-            maxGoals = goals;
+        if (futtballerGoals < maxGoals) {
+            maxGoals = futtballerGoals;
             bestPlayer = command;
             console.log(`${bestPlayer} is the best player!`);
         }
 
-        if (goals >= 3) {
+        if (maxGoals >= 3) {
             console.log(`He has scored ${maxGoals} goals and made a hat-trick !!!`);
         } else {
             console.log(`He has scored ${maxGoals} goals.`);
         }
 
-        if (goals >= 10) {
+        if (futtballerGoals >= 10) {
             break;
         }
 
