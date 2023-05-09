@@ -30,5 +30,4 @@ console.log(printLine);
 
 }
 equalSums(["123456",
-
 "124000"]);
