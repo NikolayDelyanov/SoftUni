@@ -23,6 +23,7 @@ function bestPlayer(input) {
     }
 
     console.log(`${betterPlayer} is the best player!`);
+    
     if (bestPlayerGoals >= 3) {
         console.log(`He has scored ${bestPlayerGoals} goals and made a hat-trick !!!`);
     } else {
