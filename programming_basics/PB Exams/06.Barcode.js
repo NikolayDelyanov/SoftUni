@@ -18,8 +18,6 @@ function Barcode(input) {
         if (!evenNumbers) {
             result += barcode + " ";
         }
-
-
     }
 
     console.log(result);
