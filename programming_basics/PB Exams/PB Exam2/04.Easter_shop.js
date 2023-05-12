@@ -7,7 +7,6 @@ let saveQuantity = startQuantity;
 let buyingEggs = 0;
 
 while(command !== 'Close'){
-
     index++;
     let numOfEggs = Number(input[index]);
 
