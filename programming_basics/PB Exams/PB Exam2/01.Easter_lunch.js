@@ -17,8 +17,6 @@ let totalPrice = priceForBread + priceForEggs + priceForCookies + priceForPaint;
 
 console.log(totalPrice.toFixed(2));
 
-
-
 }
 easterLunch(["3",
 "2",
