@@ -18,6 +18,7 @@ function easterTrip(input) {
             }
             totalPrice = nights * priceForNight;
             break;
+
         case 'Italy':
             if (dates === "21-23") {
                 priceForNight = 28;
@@ -28,6 +29,7 @@ function easterTrip(input) {
             }
             totalPrice = nights * priceForNight;
             break;
+
         case 'France':
             if (dates === "21-23") {
                 priceForNight = 30;
@@ -38,6 +40,7 @@ function easterTrip(input) {
             }
             totalPrice = nights * priceForNight;
             break;
+            
     }
 
     console.log(`Easter trip to ${destination} : ${totalPrice.toFixed(2)} leva.`);
