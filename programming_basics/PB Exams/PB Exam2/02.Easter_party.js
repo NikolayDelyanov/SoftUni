@@ -20,7 +20,6 @@ function easterParty(input) {
     } else {
         console.log(`No party! ${(totalSum - budget).toFixed(2)} leva needed.`);
     }
-
 }
 easterParty(["8",
     "25",
