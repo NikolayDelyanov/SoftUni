@@ -4,7 +4,6 @@ let numberOfGuests = Number(input[0]);
 let priceForOnePerson = Number(input[1]);
 let budget = Number(input[2]);
 
-
 if(numberOfGuests >= 10 && numberOfGuests <= 15){
      priceForOnePerson -= priceForOnePerson * 0.15;
 } else if(numberOfGuests >= 15 && numberOfGuests <= 20){
@@ -21,7 +20,6 @@ if(budget >= totalSum){
 } else{
     console.log(`No party! ${(totalSum - budget).toFixed(2)} leva needed.`);
 }
-
 
 }
 easterParty(["8",
