@@ -1,19 +1,25 @@
-//Start exam 22:18
+//Start exam 22:25
 
-function birthdayParty(input){
+function easterLunch(input){
 
-let rentForHall = Number(input[0]);
+let numEasterBread = Number(input[0]);
+let numEggShells = Number(input[1]);
+let kilosOfCookies = Number(input[2]);
+
+let oneShell = 12;
+
+let priceForBread = numEasterBread * 3.20;
+let priceForEggs = numEggShells * 4.35;
+let priceForCookies = kilosOfCookies * 5.40; 
+let priceForPaint = numEggShells * oneShell * 0.15;
+
+let totalPrice = priceForBread + priceForEggs + priceForCookies + priceForPaint;
+
+console.log(totalPrice.toFixed(2));
 
 
-let cakePrice = rentForHall * (20 / 100);
-let drinkPrice = cakePrice - cakePrice * 0.45;
-let animatorPrice = (1 / 3) * rentForHall;
-
-let neededSum = rentForHall + cakePrice + drinkPrice + animatorPrice;
-
-console.log(neededSum);
 
 }
-
-
-birthdayParty(["2250"]);
+easterLunch(["3",
+"2",
+"3"]);
