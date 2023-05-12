@@ -33,7 +33,6 @@ function easterShop(input) {
         console.log(`${buyingEggs} eggs sold.`);
     }
 
-
 }
 easterShop(["13",
     "Buy",
