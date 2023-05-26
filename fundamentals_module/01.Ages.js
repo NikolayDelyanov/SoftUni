@@ -13,8 +13,7 @@ function ages(age) {
     } else {
         console.log("out of bounds");
     }
-
-
+    
 }
 ages(1);
 ages(3);
