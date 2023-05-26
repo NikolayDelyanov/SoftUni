@@ -10,6 +10,8 @@ if(age >= 0 && age <= 2){
     console.log("adult");
 }else if(age >= 66){
     console.log("elder");
+}else{
+    console.log("out of bounds");
 }
 
 
