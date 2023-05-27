@@ -13,6 +13,9 @@ function division(number) {
     } else {
         console.log("Not divisible");
     }
-    
+
 }
 division(30);
+division(15);
+division(12);
+division(1643);
