@@ -13,7 +13,6 @@ function division(number) {
     } else {
         console.log("Not divisible");
     }
-
-
+    
 }
 division(30);
