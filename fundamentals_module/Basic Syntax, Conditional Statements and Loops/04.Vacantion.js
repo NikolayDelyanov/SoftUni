@@ -24,6 +24,7 @@ switch(day){
                 }
                 break;
         }
+        break;
     case 'Saturday':
         switch(type){
             case 'Students':
@@ -45,6 +46,7 @@ switch(day){
                 }
                 break;
         }
+        break;
     case 'Sunday':
         switch(type){
             case 'Students':
@@ -66,9 +68,11 @@ switch(day){
                 }
                 break;
         }
+        break;
 }
 
 console.log(`Total price: ${totalPrice.toFixed(2)}`);
 
 }
 vacantion(30 , "Students", "Sunday");
+vacantion(40 , "Regular", "Saturday");
