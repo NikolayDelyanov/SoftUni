@@ -22,7 +22,7 @@ switch(day){
                 if(count >= 10 && count <= 20){
                     totalPrice *= 0.95;
                 }
-                break;
+                
         }
         break;
     case 'Saturday':
@@ -44,7 +44,7 @@ switch(day){
                 if(count >= 10 && count <= 20){
                     totalPrice *= 0.95;
                 }
-                break;
+                
         }
         break;
     case 'Sunday':
@@ -66,7 +66,7 @@ switch(day){
                 if(count >= 10 && count <= 20){
                     totalPrice *= 0.95;
                 }
-                break;
+                
         }
         break;
 }
