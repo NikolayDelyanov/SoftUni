@@ -11,7 +11,6 @@ function printAndSum(start, end) {
     console.log(buffNumber);
     console.log(`Sum: ${sum}`);
 
-
 }
 printAndSum(5, 10);
 console.log("-------------");
