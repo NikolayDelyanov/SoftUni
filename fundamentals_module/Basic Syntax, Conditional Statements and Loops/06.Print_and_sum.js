@@ -10,8 +10,7 @@ function printAndSum(start, end) {
 
     console.log(buffNumber);
     console.log(`Sum: ${sum}`);
-
 }
 printAndSum(5, 10);
 console.log("-------------");
-printAndSum(45, 63);
+printAndSum(69, 78);
