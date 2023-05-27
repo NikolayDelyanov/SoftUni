@@ -14,4 +14,4 @@ function printAndSum(start, end) {
 }
 printAndSum(5, 10);
 console.log("-------------");
-printAndSum(69, 78);
+printAndSum(67, 78);
