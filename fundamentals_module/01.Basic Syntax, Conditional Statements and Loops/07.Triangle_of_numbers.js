@@ -8,7 +8,6 @@ for(let row = 1; row <= n; row++){
     console.log(buff);
 }
 
-
 }
 numbers(9);
 console.log("---------------------");
