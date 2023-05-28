@@ -22,7 +22,5 @@ function login(input) {
             console.log(`Incorrect password. Try again.`);
         }
     }
-
-
 }
 login(['sunny', 'rainy', 'cloudy', 'sunny', 'not sunny']);
