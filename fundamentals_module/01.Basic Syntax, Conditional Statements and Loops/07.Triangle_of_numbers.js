@@ -1,12 +1,12 @@
-function numbers(n){
+function numbers(n) {
 
-for(let row = 1; row <= n; row++){
-    let buff = "";
-    for(let col = 0; col < row; col++){
-        buff += row + " ";
+    for (let row = 1; row <= n; row++) {
+        let buff = "";
+        for (let col = 0; col < row; col++) {
+            buff += row + " ";
+        }
+        console.log(buff);
     }
-    console.log(buff);
-}
 
 }
 numbers(9);
