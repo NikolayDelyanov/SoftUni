@@ -8,7 +8,7 @@ for(let i = username.length - 1; i >= 0; i--){
 }
  let incorrectPasswordCount = 0;
 
- for(let i = 1; i <= input.length; i++){
+ for(let i = 1; i < input.length; i++){
     let tempPassword = input[i];
 
     if(tempPassword === password){
