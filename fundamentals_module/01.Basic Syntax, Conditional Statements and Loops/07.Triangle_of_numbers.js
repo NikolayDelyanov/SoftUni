@@ -11,6 +11,11 @@ for(let row = 1; row <= n; row++){
 }
 numbers(9);
 console.log("---------------------");
-numbers(15);
+numbers(5);
 console.log("---------------------");
-numbers(45);
+numbers(9);
+console.log("---------------------");
+numbers(5);
+console.log("---------------------");
+numbers(9);
+
