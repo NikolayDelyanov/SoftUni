@@ -14,11 +14,13 @@ function login(input) {
         if (tempPassword === password) {
             console.log(`User ${username} logged in.`);
         } else {
+            
             incorrectPasswordCount++;
             if (incorrectPasswordCount === 4) {
                 console.log(`User ${username} blocked!`);
                 break;
             }
+
             console.log(`Incorrect password. Try again.`);
         }
     }
