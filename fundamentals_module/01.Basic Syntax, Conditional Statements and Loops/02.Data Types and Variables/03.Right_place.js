@@ -1,10 +1,10 @@
-function rightPlace(text,charToChange,targetText){
+function rightPlace(text, charToChange, targetText) {
 
     let newString = '';
     for (let index = 0; index < text.length; index++) {
-        if(text[index] === "_"){
+        if (text[index] === "_") {
             newString = newString + charToChange;
-        }else{
+        } else {
             newString += text[index];
         }
     }
@@ -12,4 +12,4 @@ function rightPlace(text,charToChange,targetText){
     console.log(newString === targetText ? 'Matched' : 'Not Matched');
 
 }
-rightPlace('Str_ng', 'I','Strong');
+rightPlace('Str_ng', 'I', 'Strong');
