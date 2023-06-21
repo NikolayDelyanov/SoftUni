@@ -8,8 +8,6 @@ function echo(param) {
     } else {
         console.log('Parameter is not suitable for printing');
     }
-
-
 }
 echo('Hello javascript');
 echo(18);
