@@ -11,8 +11,6 @@ function rightPlace(text,charToChange,targetText){
     }
 
     console.log(newString === targetText ? 'Matched' : 'Not Matched');
-
-
-
+    
 }
 rightPlace('Str_ng', 'I','Strong');
