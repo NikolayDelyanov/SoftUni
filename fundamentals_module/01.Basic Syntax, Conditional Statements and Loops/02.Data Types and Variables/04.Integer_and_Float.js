@@ -10,6 +10,5 @@ if(sum % 1 === 0){
 
 console.log(sum);
 
-
 }
 integerAndFloat(100, 200, 303);
