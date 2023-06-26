@@ -1,15 +1,14 @@
-function reverseArray(n,arr){
+function reverseArray(n, arr) {
 
-let newArr = [];
-for (let i = n - 1; i >= 0; i--) {
-    const element = arr[i];
+    let newArr = [];
+    for (let i = n - 1; i >= 0; i--) {
+        const element = arr[i];
 
-    newArr.push(element);
+        newArr.push(element);
 
-}
+    }
 
-console.log(newArr.join(' '));
-
+    console.log(newArr.join(' '));
 
 }
 reverseArray(4, [-1, 20, 99, 5]);
