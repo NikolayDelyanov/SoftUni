@@ -1,16 +1,16 @@
-function reverseInPlace(arr){
+function reverseInPlace(arr) {
 
-for(let i = 0; i < arr.length / 2; i++){
-    let temp = arr[i];
-    arr[i] = arr[arr.length - 1 - i];
-    arr[arr.length - 1 - i] = temp;
-}
+    for (let i = 0; i < arr.length / 2; i++) {
+        let temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = temp;
+    }
 
-console.log(arr.join(' '));
+    console.log(arr.join(' '));
 
 }
 reverseInPlace(['a', 'b', 'c', 'd', 'e']);
 console.log('><><><><><><><><><><><><><><><');
 reverseInPlace(['abc', 'def', 'hig',
-'klm', 'nop']);
+    'klm', 'nop']);
 console.log('><><><><><><><><><><><><><><><');
