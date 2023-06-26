@@ -14,6 +14,5 @@ function dayOfWeek(day) {
         } else {
             console.log(days[day - 1]);
         }
-
 }
 dayOfWeek(3);
