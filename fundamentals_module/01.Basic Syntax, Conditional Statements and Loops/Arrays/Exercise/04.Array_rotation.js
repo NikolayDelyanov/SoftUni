@@ -1,7 +1,5 @@
 function arrayRotation(array, rotationCount) {
 
-    let buffArr = [];
-
     for (let i = 0; i < rotationCount; i++) {
         let currElement = array[0];
         array.shift();
