@@ -1,23 +1,23 @@
 function maxSequence(arr) {
- 
+
     let longestSequence = [];
     let leftMostIndex = 0;
- 
+
     for (let i = 0; i < arr.length; i++) {
 
         let currentSequence = [arr[i]];
- 
+
         for (let j = i + 1; j < arr.length; j++) {
 
             let nextEl = arr[j];
- 
+
             if (nextEl !== arr[i]) {
                 break;
             }
 
             currentSequence.push(nextEl)
         }
- 
+
         if (currentSequence.length > longestSequence.length) {
 
             longestSequence = [...currentSequence];
