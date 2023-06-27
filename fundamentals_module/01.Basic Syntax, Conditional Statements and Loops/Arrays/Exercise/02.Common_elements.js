@@ -5,9 +5,7 @@ function commonElements(firstArr, secondArr) {
             if (firstArr[i] === secondArr[y]) {
                 console.log(firstArr[i]);
             }
-
         }
-
     }
 }
 commonElements(['Hey', 'hello', 2, 4, 'Peter', 'e'],
