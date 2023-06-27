@@ -3,34 +3,27 @@ function maxSequence(arr) {
     let longestSequence = [];
     let leftMostIndex = 0;
  
- 
     for (let i = 0; i < arr.length; i++) {
-        currentEl = Number(arr[i]);
-        let currentSequence = [currentEl];
- 
+
+        let currentSequence = [arr[i]];
  
         for (let j = i + 1; j < arr.length; j++) {
-            let nextEl = Number(arr[j]);
+
+            let nextEl = arr[j];
  
-            if (nextEl === currentEl) {
-                currentSequence.push(nextEl)
-            } else {
+            if (nextEl !== arr[i]) {
                 break;
             }
- 
+
+            currentSequence.push(nextEl)
         }
  
         if (currentSequence.length > longestSequence.length) {
-            longestSequence = [];
-            for (let j = 0; j < currentSequence.length; j++) {
-                longestSequence.push(currentSequence[j]);
-            }
-        } else if (currentSequence.length === longestSequence.length) {
-            if (i < leftMostIndex) {
-                leftMostIndex = i;
-            }
+
+            longestSequence = [...currentSequence];
         }
     }
+
     console.log(longestSequence.join(' '));
 }
 console.log('---------------');
