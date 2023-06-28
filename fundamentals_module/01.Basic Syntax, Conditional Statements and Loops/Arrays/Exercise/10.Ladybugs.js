@@ -18,20 +18,31 @@ for (let i = 2; i < input.length; i++) {
     let direction = commands[1];
     let flyLength = Number(commands[2]);
 
-    if(direction === 'right'){
-        field[startPositions] = 0;
-        console.log(field.join(', '));
-        field[startPositions + flyLength];
-    } else {
 
+    if(direction === 'right'){
+      for (let i = startPositions; i < field.length; i++) {
+        field[startPositions] = 0;
+        if( field[i + flyLength] !== 1 && i + flyLength < field.length - 1){
+            field[i+flyLength] = 1;
+
+            console.log(typeof(field));
+        }    
+      }
+    } else {
+        for (let i = startPositions; i < field.length; i--) {
+            field[startPositions] = 0;
+            if()
+            
+        }
     }
 
 }
-
-
+   console.log(field.join(' '));
 }
-//ladybugs([ 3, '2 0', 'n' ]);
-//console.log('---------------');
+ladybugs([ 3, '0 1',
+'0 right 1',
+'2 right 1' ]);
+console.log('---------------');
 ladybugs([ 3, '0 1 2', '0 right 1', '1 right 1', '2 right 1']);
 console.log('---------------');
 ladybugs([ 5, '3', '3 left 2', '1 left -2']);
