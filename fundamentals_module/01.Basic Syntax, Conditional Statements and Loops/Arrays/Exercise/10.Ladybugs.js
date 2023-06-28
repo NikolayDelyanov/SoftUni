@@ -18,19 +18,18 @@ function ladybugs(input) {
         let direction = commands[1];
         let flyLength = Number(commands[2]);
 
-
         if (direction === 'right') {
-            if(startPositions < field.length - 1 && startPositions >= 0){
-            for (let i = startPositions; i < field.length; i++) {
-                field[startPositions] = 0;
-                if (field[i + flyLength] !== 1 && i + flyLength < field.length - 1) {
-                    field[i + flyLength] = 1;
-                    break;
+            if (startPositions < field.length - 1 && startPositions >= 0) {
+                for (let i = startPositions; i < field.length; i++) {
+                    field[startPositions] = 0;
+                    if (field[i + flyLength] !== 1 && i + flyLength < field.length - 1) {
+                        field[i + flyLength] = 1;
+                        break;
+                    }
                 }
             }
-        }
         } else {
-            if (startPositions < field.length - 1 && startPositions >= 0){
+            if (startPositions < field.length - 1 && startPositions >= 0) {
                 for (let i = startPositions; i >= 0; i--) {
                     field[startPositions] = 0;
                     if (field[i - flyLength] !== 1 && i - flyLength >= 0) {
@@ -43,5 +42,4 @@ function ladybugs(input) {
     }
     console.log(field.join(' '));
 }
-
 ladybugs([5, '3', '3 left 2', '1 left -2']);
