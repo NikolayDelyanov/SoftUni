@@ -1,7 +1,7 @@
-function muchPower(number, power){
+function muchPower(number, power) {
 
-console.log(Math.pow(number,power));
+    console.log(Math.pow(number, power));
 
 }
-muchPower(2,8);
-muchPower(3,4)
+muchPower(2, 8);
+muchPower(3, 4)
