@@ -21,8 +21,4 @@ if(negative % 2 === 0){
 }
 
 }
-signChek(5,
-
-    12,
-    
-    -15);
+signChek(5,12, -15);
