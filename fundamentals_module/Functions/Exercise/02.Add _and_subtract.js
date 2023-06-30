@@ -4,8 +4,4 @@ function sum(a,b,c){
 
     console.log(subtract);
 }
-sum(23,
-
-    6,
-    
-    10);
+sum(23,6,10);
