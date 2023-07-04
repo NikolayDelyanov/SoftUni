@@ -17,7 +17,7 @@ function passwordValidator(pass) {
         }
     }
 
-    if (digits >= 2 && isOnlyLettersAndDigigts && isValidLength) {
+    if (/^[A-Za-z]*[0-9]{2,}/.test(pass)) {
         console.log('Password is valid');
     } else {
 
