@@ -2,11 +2,8 @@ function palindrome(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         let numToString = String(arr[i]);
-        let buff = "";
-        for (let j = numToString.length - 1; j >= 0; j--) {
-            buff += numToString[j];
-        }
-
+        let buff = numToString.split('').reverse().join('');
+         
         console.log(buff === numToString);
     }
 
