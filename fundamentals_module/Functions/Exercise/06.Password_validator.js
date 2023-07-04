@@ -12,6 +12,7 @@ function passwordValidator(pass) {
 
     for (let i = 0; i < pass.length; i++) {
         console.log();
+        
         if (/\d/.test(pass[i])) {
             digits++
         }
@@ -19,7 +20,9 @@ function passwordValidator(pass) {
 
     if (digits >= 2 && isOnlyLettersAndDigigts && isValidLength) {
         console.log('Password is valid');
+
     } else {
+
         if (isOnlyLettersAndDigigts === false) {
             console.log("Password must consist only of letters and digits");
         }
