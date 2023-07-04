@@ -1,6 +1,6 @@
 function loadingBar(number) {
 
-    let procentages = '%'.repeat(number / 10);
+    let procentages = '%'.repeat(number / 10,);
     let dots = '.'.repeat(10 - number / 10);
 
     if (number === 100) {
