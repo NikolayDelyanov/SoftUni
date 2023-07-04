@@ -12,13 +12,12 @@ function passwordValidator(pass) {
 
     for (let i = 0; i < pass.length; i++) {
         console.log();
-        
         if (/\d/.test(pass[i])) {
             digits++
         }
     }
 
-    if (/^[A-Za-z]*[0-9]{2,}/gm) {
+    if (digits >= 2 && isOnlyLettersAndDigigts && isValidLength) {
         console.log('Password is valid');
 
     } else {
