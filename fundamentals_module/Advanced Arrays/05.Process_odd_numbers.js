@@ -1,12 +1,12 @@
-function processOddNums(arr){
+function processOddNums(arr) {
 
-let filtered  = arr.filter((x,i)=>i % 2 == 1);
+    let filtered = arr.filter((x, i) => i % 2 == 1);
 
-let doubled = filtered.map(x => x * 2);
+    let doubled = filtered.map(x => x * 2);
 
-let result = doubled.reverse();
+    let result = doubled.reverse();
 
-console.log(result.join(' '));
+    console.log(result.join(' '));
 
 }
 processOddNums([10, 15, 20, 25]);
