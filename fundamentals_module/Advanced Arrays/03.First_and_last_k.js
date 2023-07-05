@@ -1,8 +1,8 @@
-function firstLastK(arr){
+function firstLastK(arr) {
 
     let k = arr.shift();
 
-    let firstK = arr.slice(0,k);
+    let firstK = arr.slice(0, k);
     let secondK = arr.slice(-k);
 
     console.log(firstK.join(' '));
