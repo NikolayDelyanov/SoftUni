@@ -5,6 +5,5 @@ function sum(input){
 
     console.log(Number(firstSum) + Number(secondSum));
 
-
 }
 sum(['20', '30', '40'] );
