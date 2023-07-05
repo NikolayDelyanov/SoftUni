@@ -1,20 +1,19 @@
-function negativeOrPositive(array){
+function negativeOrPositive(array) {
 
-let result = [];
+    let result = [];
 
-for(let element of array){
-    element = Number(element);
-    if(element < 0){
-        result.unshift(element);
-    } else {
-        result.push(element);
+    for (let element of array) {
+        element = Number(element);
+        if (element < 0) {
+            result.unshift(element);
+        } else {
+            result.push(element);
+        }
     }
-}
 
-for(let element of result){
-    console.log(element);
-}
-
+    for (let element of result) {
+        console.log(element);
+    }
 
 }
 negativeOrPositive(['7', '-2', '8', '9']);
