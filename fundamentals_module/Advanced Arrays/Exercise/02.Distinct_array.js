@@ -1,0 +1,14 @@
+function distinctArray(numbers){
+
+    let toFindDuplicates = numbers.filter((item, index) => numbers.indexOf(item) !== index);
+    let duplicateElements = toFindDuplicates;
+
+    let filteredNumbers = numbers.filter(number => number !== duplicateElements);
+    console.log([... new Set(numbers)].join(' '));
+
+}
+distinctArray([1, 2, 3, 4]);
+console.log('------');
+distinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2]);
+console.log('------');
+distinctArray([20, 8, 12, 13, 4, 4, 8, 5]);
