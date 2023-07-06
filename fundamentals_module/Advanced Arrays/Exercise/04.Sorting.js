@@ -5,7 +5,7 @@ function sorting(array) {
     let highest = [...array].sort((a, b) => b - a);
     let arr2 = [];
 
-    for (let i = 0; i < highest.length; i++) {
+    for (let i = 0; i < highest.length/2; i++) {
         arr2.push(highest[i]);
         arr2.push(smaller[i]);
     }
