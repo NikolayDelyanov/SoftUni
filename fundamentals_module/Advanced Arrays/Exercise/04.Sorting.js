@@ -1,16 +1,15 @@
 function sorting(array) {
 
-
-    let smaller = [...array].sort((a, b) => a - b);
-    let highest = [...array].sort((a, b) => b - a);
     let arr2 = [];
 
-    for (let i = 0; i < highest.length/2; i++) {
-        arr2.push(highest[i]);
-        arr2.push(smaller[i]);
+    array.sort((a,b) => b-a);
+
+    while(array.length >0) {
+        arr2.push(array.shift());
+        arr2.push(array.pop());
     }
 
-    console.log([... new Set(arr2)].join(' '));
+    console.log(arr2.join(' '));
 
 }
 sorting([1, 21, 3, 52, 69, 63, 31, 2, 18, 94]);
