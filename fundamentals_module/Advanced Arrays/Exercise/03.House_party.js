@@ -22,7 +22,6 @@ function houseParty(input) {
 
     console.log(myList.join("\n"));
 
-
 }
 houseParty(['Allie is going!',
     'George is going!',
