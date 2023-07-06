@@ -1,9 +1,5 @@
 function distinctArray(numbers) {
 
-    let toFindDuplicates = numbers.filter((item, index) => numbers.indexOf(item) !== index);
-    let duplicateElements = toFindDuplicates;
-
-    let filteredNumbers = numbers.filter(number => number !== duplicateElements);
     console.log([... new Set(numbers)].join(' '));
 
 }
