@@ -1,4 +1,4 @@
-function distinctArray(numbers){
+function distinctArray(numbers) {
 
     let toFindDuplicates = numbers.filter((item, index) => numbers.indexOf(item) !== index);
     let duplicateElements = toFindDuplicates;
