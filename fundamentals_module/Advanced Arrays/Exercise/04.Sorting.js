@@ -8,7 +8,6 @@ function sorting(array) {
     for (let i = 0; i < highest.length; i++) {
         arr2.push(highest[i]);
         arr2.push(smaller[i]);
-
     }
 
     console.log([... new Set(arr2)].join(' '));
