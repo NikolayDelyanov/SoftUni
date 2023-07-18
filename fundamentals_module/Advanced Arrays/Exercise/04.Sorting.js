@@ -2,9 +2,9 @@ function sorting(array) {
 
     let arr2 = [];
 
-    array.sort((a,b) => b-a);
+    array.sort((a, b) => b - a);
 
-    while(array.length >0) {
+    while (array.length > 0) {
         arr2.push(array.shift());
         arr2.push(array.pop());
     }
