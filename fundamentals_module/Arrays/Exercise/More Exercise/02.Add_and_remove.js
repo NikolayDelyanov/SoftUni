@@ -14,6 +14,6 @@ function addAndRemove(arr) {
     } else {
         console.log(result.join(' '));
     }
-    
+
 }
 addAndRemove(['add', 'add', 'add', 'add']);
