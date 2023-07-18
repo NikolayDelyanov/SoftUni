@@ -7,7 +7,7 @@ function bombNumbers(arr1, arr2) {
 
         if (arr1[i] === specialBombNum) {
 
-            
+
             let lowerRange = i - powerBomb;
             let bombCount = 1 + (powerBomb * 2);
 
@@ -21,8 +21,9 @@ function bombNumbers(arr1, arr2) {
         }
 
     }
+
     let reducer = (a, b) => a + b;
     console.log(arr1.reduce(reducer));
 }
 bombNumbers([1, 2, 2, 4, 2, 2, 2, 9],
-[4, 2]);
+    [4, 2]);
