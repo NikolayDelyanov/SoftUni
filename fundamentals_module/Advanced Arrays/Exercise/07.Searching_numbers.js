@@ -14,6 +14,6 @@ function search(arr1,arr2){
 
     console.log(`Number ${elements} occurs ${count} times.`);
 
-
 }
-search([5, 2, 3, 4, 1, 6] , [5, 2, 3]);
+search([5, 2, 3, 4, 1, 6] , 
+    [5, 2, 3]);
