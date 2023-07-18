@@ -17,3 +17,7 @@ function addAndRemove(arr) {
 
 }
 addAndRemove(['add', 'add', 'add', 'add']);
+console.log('--------');
+addAndRemove(['add', 'add', 'remove', 'add', 'add']);
+console.log('--------');
+addAndRemove(['remove', 'remove', 'remove']);
