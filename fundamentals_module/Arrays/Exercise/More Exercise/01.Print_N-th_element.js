@@ -1,5 +1,5 @@
 function printNthElement(arr) {
-    
+
     let lastNum = arr.pop();
     let resultArr = [];
     for (let index in arr) {
