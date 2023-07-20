@@ -1,4 +1,5 @@
 function modify(number) {
+    
     let array = [];
 
     let string = numAsString(number);
@@ -19,7 +20,7 @@ function modify(number) {
     }
 
     function loopTheArr(arr) {
-        
+
         let sum = 0;
         let averageSum = 0;
         let numberCount = 0;
