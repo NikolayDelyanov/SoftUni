@@ -1,122 +1,122 @@
 function tseamAccount(arr) {
 
-     let firstCurrentCommand = arr[0];
-     firstCurrentCommand = firstCurrentCommand.split(' ');
-     let currentCommand = arr.shift();
-     let newArr = [];
-     newArr.push(firstCurrentCommand);
+  let firstCurrentCommand = arr[0];
+  firstCurrentCommand = firstCurrentCommand.split(' ');
+  let currentCommand = arr.shift();
+  let newArr = [];
+  newArr.push(firstCurrentCommand);
 
-     while (currentCommand !== "Play!") {
-    
-         currentCommand = currentCommand.split(" ");
-    
-         for (let i = 0; i < arr.length; i++) {
-         for (let j = 0; j < firstCurrentCommand.length; j++) {
+  while (currentCommand !== "Play!") {
 
-         if (currentCommand[i] === "Install") {
-        
+    currentCommand = currentCommand.split(" ");
+
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < firstCurrentCommand.length; j++) {
+
+        if (currentCommand[i] === "Install") {
+
           break;
         }
 
-         if (currentCommand[i] === "Uninstall") {
-        
-             if (currentCommand[i + 1] === firstCurrentCommand[j]) {
-            
-                 firstCurrentCommand.splice(j, 1);
-                 break;
-            }
-        }
-         if (currentCommand[i] === "Update") {
-        
-             if (currentCommand[i + 1] === firstCurrentCommand[j]) {
-        
-                 newArr.push(firstCurrentCommand[j]);
-                 firstCurrentCommand.splice(j, 1);
-                 break;
-            }
-        }
-         if (currentCommand[i] === "Expansion") {
-        
-             firstCurrentCommand.push(currentCommand[i + 1].split(':').join('   '));
-             break;
-        
-            }
-        }
-         }
+        if (currentCommand[i] === "Uninstall") {
 
-      
-         currentCommand = arr.shift();
+          if (currentCommand[i + 1] === firstCurrentCommand[j]) {
 
+            firstCurrentCommand.splice(j, 1);
+            break;
+          }
+        }
+        if (currentCommand[i] === "Update") {
+
+          if (currentCommand[i + 1] === firstCurrentCommand[j]) {
+
+            newArr.push(firstCurrentCommand[j]);
+            firstCurrentCommand.splice(j, 1);
+            break;
+          }
+        }
+        if (currentCommand[i] === "Expansion") {
+
+          firstCurrentCommand.push(currentCommand[i + 1].split(':').join('   '));
+          break;
+
+        }
+      }
     }
-    console.log(newArr.join(' '));
+
+
+    currentCommand = arr.shift();
+
+  }
+  console.log(newArr.join(' '));
 
 }
 tseamAccount(['CS WoW Diablo',
 
-'Install LoL',
+  'Install LoL',
 
-'Uninstall WoW',
+  'Uninstall WoW',
 
-'Update Diablo',
+  'Update Diablo',
 
-'Expansion CS-Go',
+  'Expansion CS-Go',
 
-'Play!']);
+  'Play!']);
 
 console.log('------------');
 
 function tseamAccount(arr) {
-    let account = arr.shift().split(' ');
-    
-    while (true) {
+  let account = arr.shift().split(' ');
 
-        let [command, game] = arr.shift().split(' ');
+  while (true) {
 
-        if (command === 'Play!') {
-            break;
-        }
+    let [command, game] = arr.shift().split(' ');
 
-        if (command === "Install") {
-            if (!account.includes(game)) {
-                account.push(game);
-            }
-        }
-
-        else if (command === "Uninstall") {
-            if (account.includes(game)) {
-                let gameIndex = account.indexOf(game);
-                account.splice(gameIndex, 1);
-            }
-        }
-        else if (command === "Update") {
-            if (account.includes(game)) {
-                let gameIndex = account.indexOf(game);
-                account.splice(gameIndex, 1);
-                account.push(game);
-            }
-        }
-
-        else if (command === "Expansion") {
-            let originalGame = game.split('-')[0];
-            if (account.includes(originalGame)) {
-                let expansionGame = game.split('-')[0] + ':' + game.split('-')[1];
-                let gameIndex = account.indexOf(originalGame);
-                account.splice(gameIndex + 1, 0, expansionGame)
-            }
-        }
-
+    if (command === 'Play!') {
+      break;
     }
-    console.log(account.join(' '));
+
+    if (command === "Install") {
+      if (!account.includes(game)) {
+        account.push(game);
+      }
+    }
+
+    else if (command === "Uninstall") {
+      if (account.includes(game)) {
+        let gameIndex = account.indexOf(game);
+        account.splice(gameIndex, 1);
+      }
+    }
+    else if (command === "Update") {
+      if (account.includes(game)) {
+        let gameIndex = account.indexOf(game);
+        account.splice(gameIndex, 1);
+        account.push(game);
+      }
+    }
+
+    else if (command === "Expansion") {
+      let originalGame = game.split('-')[0];
+      if (account.includes(originalGame)) {
+        let expansionGame = game.split('-')[0] + ':' + game.split('-')[1];
+        let gameIndex = account.indexOf(originalGame);
+        account.splice(gameIndex + 1, 0, expansionGame)
+      }
+    }
+
+  }
+  console.log(account.join(' '));
 
 }
 tseamAccount(['CS WoW Diablo',
 
-'Install LoL',
+  'Install LoL',
 
-'Uninstall WoW',
+  'Uninstall WoW',
 
-'Update Diablo',
+  'Update Diablo',
 
-'Expansion CS-Go',
+  'Expansion CS-Go',
 
-'Play!']);
+  'Play!']);
