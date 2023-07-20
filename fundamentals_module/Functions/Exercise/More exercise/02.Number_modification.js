@@ -30,23 +30,15 @@ function modify(number) {
             let currentNum = Number(arr[i]);
             sum += currentNum;
             averageSum = sum / numberCount;
-            // averageSum = sum / arr.length;
-
-            // if (averageSum <= 5 && arrayLength >= 3) {
-            //     array.push('9');
-            // } else if (averageSum > 5) {
-            //     break;
-            // }
 
             if (averageSum <= 5 && i >= arr.length - 1) {
-                // array.push('9');
+                
                 arr.push('9');
             } else if (averageSum > 5 && i == arr.length - 1) {
                 break;
             }
         }
 
-        // return array;
         return arr;
     }
 
