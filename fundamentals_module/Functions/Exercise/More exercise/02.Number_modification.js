@@ -19,6 +19,7 @@ function modify(number) {
     }
 
     function loopTheArr(arr) {
+        
         let sum = 0;
         let averageSum = 0;
         let numberCount = 0;
@@ -32,7 +33,6 @@ function modify(number) {
             averageSum = sum / numberCount;
 
             if (averageSum <= 5 && i >= arr.length - 1) {
-
                 arr.push('9');
             } else if (averageSum > 5 && i == arr.length - 1) {
                 break;
