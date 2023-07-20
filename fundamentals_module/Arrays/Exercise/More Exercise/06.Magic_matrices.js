@@ -7,6 +7,7 @@ function solve(matrix) {
         if (rowSum !== sum) {
             return false;
         }
+
         if (row === 0) {
             for (let col = 0; col < matrix[row].length; col++) {
                 let columSum = 0;
@@ -19,6 +20,7 @@ function solve(matrix) {
             }
         }
     }
+
     return true;
 }
 magicMatrices([4, 5, 6],
