@@ -32,7 +32,7 @@ function modify(number) {
             averageSum = sum / numberCount;
 
             if (averageSum <= 5 && i >= arr.length - 1) {
-                
+
                 arr.push('9');
             } else if (averageSum > 5 && i == arr.length - 1) {
                 break;
