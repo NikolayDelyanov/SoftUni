@@ -14,7 +14,6 @@ function tseamAccount(arr) {
       for (let j = 0; j < firstCurrentCommand.length; j++) {
 
         if (currentCommand[i] === "Install") {
-
           break;
         }
 
@@ -26,6 +25,7 @@ function tseamAccount(arr) {
             break;
           }
         }
+
         if (currentCommand[i] === "Update") {
 
           if (currentCommand[i + 1] === firstCurrentCommand[j]) {
@@ -35,6 +35,7 @@ function tseamAccount(arr) {
             break;
           }
         }
+
         if (currentCommand[i] === "Expansion") {
 
           firstCurrentCommand.push(currentCommand[i + 1].split(':').join('   '));
@@ -43,7 +44,6 @@ function tseamAccount(arr) {
         }
       }
     }
-
 
     currentCommand = arr.shift();
 
@@ -88,6 +88,7 @@ function tseamAccount(arr) {
         account.splice(gameIndex, 1);
       }
     }
+
     else if (command === "Update") {
       if (account.includes(game)) {
         let gameIndex = account.indexOf(game);
