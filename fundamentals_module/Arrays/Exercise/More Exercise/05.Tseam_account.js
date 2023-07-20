@@ -63,7 +63,7 @@ tseamAccount(['CS WoW Diablo',
 
 'Play!']);
 
-console.log('----------------');
+console.log('------------');
 
 function tseamAccount(arr) {
     let account = arr.shift().split(' ');
