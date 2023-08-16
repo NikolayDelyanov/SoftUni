@@ -18,6 +18,5 @@ function DNA(n){
         arr.push(a)
         arr.push(b)
     }
-
 }
 DNA(4);
